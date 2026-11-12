@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akhila Gandrotula — UI/UX & Web Interface Portfolio</title>
+  <title>Akhila Gandrotula — Test Portfolio</title>
   <script src="https://tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans antialiased">
@@ -13,220 +13,218 @@
     <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
       <a href="#" class="font-bold text-lg tracking-tight text-slate-900">Akhila Gandrotula</a>
       <div class="space-x-6 text-sm font-medium text-slate-600">
-        <a href="#demos" class="hover:text-blue-600 transition">Interactive Demos</a>
-        <a href="#principles" class="hover:text-blue-600 transition">UI/UX Approach</a>
+        <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+        <a href="#projects" class="hover:text-blue-600 transition">Projects & Skills</a>
         <a href="#resume" class="hover:text-blue-600 transition">Resume</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="max-w-5xl mx-auto px-6 py-16 md:py-24">
+  <!-- Hero Section: Test Portfolio & Summary -->
+  <header class="max-w-5xl mx-auto px-6 py-16 md:py-20">
     <span class="inline-block bg-blue-50 text-blue-700 font-semibold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-4">
-      UI/UX & Front-End Interface Showcase
+      Business Intelligence Analyst • Interactive Data & Web Interfaces
     </span>
-    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6 max-w-3xl">
-      Building clean, intuitive web interfaces focused on usability and clarity.
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6">
+      Test Portfolio
     </h1>
-    <p class="text-lg text-slate-600 max-w-2xl mb-8 leading-relaxed">
-      I designed and coded this responsive page—along with the interactive interface components below—to demonstrate my approach to layout hierarchy, accessibility, and user-friendly front-end development.
+    <p class="text-base md:text-lg text-slate-600 max-w-4xl mb-8 leading-relaxed">
+      Business Intelligence Analyst skilled in building scalable SQL-driven analytics solutions, dimensional data models, and interactive data applications that transform complex business requirements into actionable insights. Experienced in developing internal web interfaces with Python, Flask, HTML, CSS, JavaScript, and D3.js alongside intuitive Power BI and Tableau dashboards—with a strong focus on performance, usability, and clear stakeholder communication.
     </p>
     <div class="flex flex-wrap gap-4">
-      <a href="#demos" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition shadow-sm">
-        Test Live UI Demos ↓
+      <a href="#experience" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition shadow-sm">
+        Filter Experience by Company ↓
       </a>
-      <a href="https://github.com/AkhilaGandrotula" target="_blank" class="bg-white text-slate-800 border border-slate-300 px-6 py-3 rounded-lg font-medium hover:bg-slate-100 transition">
+      <a href="https://github.com" target="_blank" class="bg-white text-slate-800 border border-slate-300 px-6 py-3 rounded-lg font-medium hover:bg-slate-100 transition">
         View GitHub Profile
       </a>
     </div>
   </header>
 
-  <!-- Interactive UI/UX Demos Section -->
-  <section id="demos" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
-    <div class="mb-10">
-      <h2 class="text-2xl font-bold text-slate-900 mb-2">Interactive Interface Prototypes</h2>
-      <p class="text-slate-600">Try these live, functional UI components built with semantic HTML, Tailwind CSS, and vanilla JavaScript.</p>
+  <!-- Filter by Experience Section -->
+  <section id="experience" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold text-slate-900 mb-2">Filter by Experience</h2>
+      <p class="text-slate-600">Select a company below to explore my role, web/UI interface work, and measurable business outcomes.</p>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-8">
+    <!-- Interactive Company Filter Buttons -->
+    <div id="filter-buttons" class="flex flex-wrap gap-3 mb-8" role="tablist">
+      <button data-filter="all" class="filter-btn bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer shadow-xs">
+        All Experience (4)
+      </button>
+      <button data-filter="ingram" class="filter-btn bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer">
+        Ingram Micro
+      </button>
+      <button data-filter="deloitte" class="filter-btn bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer">
+        Deloitte Consulting India
+      </button>
+      <button data-filter="cognizant" class="filter-btn bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer">
+        Cognizant
+      </button>
+      <button data-filter="bsnl" class="filter-btn bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer">
+        BSNL
+      </button>
+    </div>
 
-      <!-- Demo 1: Interactive Filter & Search UI -->
-      <article class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
-        <div class="p-6 bg-slate-100 border-b border-slate-200">
-          <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-xs">
-            <div class="flex justify-between items-center mb-3">
-              <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Live Component</span>
-              <span id="item-count" class="text-xs font-medium text-blue-600">Showing 4 items</span>
+    <!-- Experience Cards -->
+    <div id="experience-list" class="space-y-6">
+
+      <!-- Ingram Micro -->
+      <article data-company="ingram" class="exp-card bg-white p-6 md:p-8 rounded-xl border border-slate-200 shadow-sm transition">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+          <div>
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Ingram Micro</span>
+              <span class="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-medium">Indianapolis, IN</span>
             </div>
-            <input 
-              type="text" 
-              id="search-input" 
-              placeholder="Filter UI patterns (e.g., Form, Modal)..." 
-              class="w-full px-3 py-2 text-sm border border-slate-300 rounded-md mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-            <div id="pattern-list" class="space-y-2 text-sm">
-              <div class="pattern-item flex justify-between items-center p-2 bg-slate-50 rounded border border-slate-100">
-                <span class="font-medium text-slate-800">Accessible Form Validation</span>
-                <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">WCAG AA</span>
-              </div>
-              <div class="pattern-item flex justify-between items-center p-2 bg-slate-50 rounded border border-slate-100">
-                <span class="font-medium text-slate-800">Responsive Navigation Drawer</span>
-                <span class="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Mobile-First</span>
-              </div>
-              <div class="pattern-item flex justify-between items-center p-2 bg-slate-50 rounded border border-slate-100">
-                <span class="font-medium text-slate-800">Keyboard-Trap Modal Dialog</span>
-                <span class="text-xs bg-purple-100 text-purple-800 px-2 py-0.5 rounded">Focus Mgmt</span>
-              </div>
-              <div class="pattern-item flex justify-between items-center p-2 bg-slate-50 rounded border border-slate-100">
-                <span class="font-medium text-slate-800">Skeleton Loading Cards</span>
-                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded">Perceived Speed</span>
-              </div>
-            </div>
+            <h3 class="text-xl font-bold text-slate-900">Business Intelligence Analyst</h3>
           </div>
+          <span class="text-sm font-medium text-slate-500 mt-1 md:mt-0">Oct 2025 – Present</span>
         </div>
-
-        <div class="p-6 flex-1 flex flex-col">
-          <h3 class="text-xl font-bold text-slate-900 mb-2">01. Instant Search & Filter Pattern</h3>
-          <ul class="text-sm text-slate-600 space-y-2 flex-1">
-            <li><strong>UX Goal:</strong> Eliminate page reloads and let users find information in zero clicks.</li>
-            <li><strong>Design Choice:</strong> High-contrast focus rings, real-time item counter, and scannable status badges.</li>
-          </ul>
-        </div>
+        <ul class="list-disc list-outside ml-5 text-slate-600 text-sm space-y-2.5 leading-relaxed">
+          <li><strong>Internal Web & Data Apps:</strong> Developed and maintained internal analytics application components using <strong>Python, Flask, HTML, CSS, and D3.js</strong> front ends; reviewed AI-assisted code for correctness, performance, and security while modifying functionality to improve usability and reliability.</li>
+          <li><strong>Interactive Dashboards & UX Standards:</strong> Built interactive dashboards and data interfaces using <strong>Power BI, DAX, and JavaScript</strong>, selecting layouts and interactions that reduced ad-hoc reporting requests by <strong>30%</strong>, while establishing visualization and UX standards aligned with brand guidelines.</li>
+          <li><strong>Scalable SQL & Data Modeling:</strong> Engineered Snowflake SQL procedures and dimensional star-schema models, reducing manual data preparation by <strong>~40%</strong>, improving query performance by <strong>35%</strong>, and cutting reporting inconsistencies by <strong>25%</strong>.</li>
+        </ul>
       </article>
 
-      <!-- Demo 2: Live UI Theme & Contrast Switcher -->
-      <article class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
-        <div class="p-6 bg-slate-100 border-b border-slate-200">
-          <div id="preview-card" class="bg-white text-slate-900 p-5 rounded-lg border border-slate-200 transition-all duration-200">
-            <div class="flex justify-between items-center mb-3">
-              <span class="text-xs font-bold uppercase tracking-wider opacity-60">Interactive Preview</span>
-              <button 
-                id="theme-toggle" 
-                class="text-xs font-semibold px-3 py-1 rounded bg-slate-900 text-white hover:opacity-90 transition cursor-pointer"
-              >
-                Switch to Dark Mode
-              </button>
+      <!-- Deloitte -->
+      <article data-company="deloitte" class="exp-card bg-white p-6 md:p-8 rounded-xl border border-slate-200 shadow-sm transition">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+          <div>
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Deloitte Consulting India</span>
+              <span class="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-medium">Hyderabad, India</span>
             </div>
-            <h4 class="font-bold text-base mb-1">User Account Settings</h4>
-            <p class="text-xs opacity-75 mb-4">Test how color contrast and state feedback stay readable across themes.</p>
-            <div class="flex items-center justify-between pt-3 border-t border-slate-200/50">
-              <span id="save-status" class="text-xs font-medium text-emerald-600">✓ Preferences synced</span>
-              <button 
-                id="save-btn" 
-                class="text-xs bg-blue-600 text-white px-3 py-1.5 rounded font-medium hover:bg-blue-700 transition cursor-pointer"
-              >
-                Simulate Save
-              </button>
-            </div>
+            <h3 class="text-xl font-bold text-slate-900">Business Technology Analyst</h3>
           </div>
+          <span class="text-sm font-medium text-slate-500 mt-1 md:mt-0">Jul 2021 – Dec 2022</span>
         </div>
+        <ul class="list-disc list-outside ml-5 text-slate-600 text-sm space-y-2.5 leading-relaxed">
+          <li><strong>Interactive Web & Reporting Interfaces:</strong> Created interactive reporting solutions using <strong>Tableau, HTML, CSS, and JavaScript</strong>, orienting business users to dashboard functionality and reducing manual reporting effort by <strong>~30%</strong>.</li>
+          <li><strong>Data Optimization & Validation:</strong> Optimized insurance analytics retrieval using Azure SQL stored procedures and validated performance measures with Python and Pandas, reducing reporting discrepancies by <strong>20%</strong>.</li>
+          <li><strong>Agile & GitHub Workflows:</strong> Translated stakeholder requirements into Agile/Scrum user stories, managed UAT cycles, and maintained version-controlled deliverables through GitHub.</li>
+        </ul>
+      </article>
 
-        <div class="p-6 flex-1 flex flex-col">
-          <h3 class="text-xl font-bold text-slate-900 mb-2">02. Adaptive Surface & Micro-Feedback</h3>
-          <ul class="text-sm text-slate-600 space-y-2 flex-1">
-            <li><strong>UX Goal:</strong> Give users clear visual confirmation after actions and support dark environments.</li>
-            <li><strong>Design Choice:</strong> Smooth state transitions and accessible color contrast in both light and dark modes.</li>
-          </ul>
+      <!-- Cognizant -->
+      <article data-company="cognizant" class="exp-card bg-white p-6 md:p-8 rounded-xl border border-slate-200 shadow-sm transition">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+          <div>
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Cognizant Technology Solutions</span>
+              <span class="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-medium">Hyderabad, India</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Software Intern</h3>
+          </div>
+          <span class="text-sm font-medium text-slate-500 mt-1 md:mt-0">Feb 2021 – Jun 2021</span>
         </div>
+        <ul class="list-disc list-outside ml-5 text-slate-600 text-sm space-y-2.5 leading-relaxed">
+          <li><strong>Dashboard Usability & Visualization:</strong> Enhanced Tableau dashboards by refining data models and visualization logic, improving report usability and operational clarity for stakeholders.</li>
+          <li><strong>Query Tuning & QA:</strong> Optimized enterprise SQL queries (improving performance by <strong>~25%</strong>) and collaborated with QA teams during testing cycles to reduce post-release defects by <strong>~15%</strong>.</li>
+        </ul>
+      </article>
+
+      <!-- BSNL -->
+      <article data-company="bsnl" class="exp-card bg-white p-6 md:p-8 rounded-xl border border-slate-200 shadow-sm transition">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+          <div>
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-600">BSNL</span>
+              <span class="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-medium">Kakinada, India</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Data Analytics Intern</h3>
+          </div>
+          <span class="text-sm font-medium text-slate-500 mt-1 md:mt-0">Apr 2020 – Jun 2020</span>
+        </div>
+        <ul class="list-disc list-outside ml-5 text-slate-600 text-sm space-y-2.5 leading-relaxed">
+          <li><strong>Operational Monitoring:</strong> Analyzed telecom network performance metrics using SQL and Excel, enabling faster outage identification and improving incident response time by <strong>15%</strong>.</li>
+          <li><strong>Root-Cause Reporting:</strong> Generated operational insights that helped improve network reliability and reduce recurring issues by <strong>10%</strong>.</li>
+        </ul>
       </article>
 
     </div>
   </section>
 
-  <!-- UI/UX Principles -->
-  <section id="principles" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
-    <h2 class="text-2xl font-bold text-slate-900 mb-8">My Core UI/UX Principles</h2>
-    <div class="grid md:grid-cols-3 gap-6">
+  <!-- Projects & Core Skills Section -->
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
+    <h2 class="text-2xl font-bold text-slate-900 mb-8">Featured Projects & Core Skills</h2>
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
       <div class="bg-white p-6 rounded-xl border border-slate-200">
-        <h3 class="font-bold text-slate-900 mb-2">1. Clarity Over Clutter</h3>
-        <p class="text-sm text-slate-600">Using consistent spacing, clear typography hierarchy, and focused calls-to-action so users never feel lost.</p>
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Project</span>
+        <h3 class="font-bold text-lg text-slate-900 mt-1 mb-2">AI-Powered Analytics Assistant</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Developed an agentic AI workflow using Langflow to enable natural language querying of datasets and automated insight generation, improving data accessibility for non-technical users.</p>
       </div>
       <div class="bg-white p-6 rounded-xl border border-slate-200">
-        <h3 class="font-bold text-slate-900 mb-2">2. Responsive by Default</h3>
-        <p class="text-sm text-slate-600">Designing fluid grid layouts that adapt cleanly from mobile touchscreens to desktop monitors.</p>
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Project</span>
+        <h3 class="font-bold text-lg text-slate-900 mt-1 mb-2">Retail Data Pipeline Modernization</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Built a scalable ETL pipeline using Snowflake and SQL transformations to automate ingestion and validation, delivering clean analytics-ready datasets for interactive dashboards.</p>
       </div>
-      <div class="bg-white p-6 rounded-xl border border-slate-200">
-        <h3 class="font-bold text-slate-900 mb-2">3. Immediate Feedback</h3>
-        <p class="text-sm text-slate-600">Ensuring every hover, focus, filter, and button click communicates clear system status to the user.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl border border-slate-200">
+      <h3 class="font-bold text-slate-900 mb-3">Front-End, Visualization & Analytics Stack</h3>
+      <div class="flex flex-wrap gap-2 text-xs font-medium">
+        <span class="bg-blue-50 text-blue-700 px-3 py-1.5 rounded-md">HTML5 & CSS3</span>
+        <span class="bg-blue-50 text-blue-700 px-3 py-1.5 rounded-md">JavaScript & D3.js</span>
+        <span class="bg-blue-50 text-blue-700 px-3 py-1.5 rounded-md">Python & Flask</span>
+        <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-md">Power BI & DAX</span>
+        <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-md">Tableau & Looker</span>
+        <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-md">Snowflake & SQL</span>
+        <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-md">Git & GitHub</span>
+        <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-md">AWS / Azure / GCP</span>
       </div>
     </div>
   </section>
 
-  <!-- Resume & Contact -->
+  <!-- Resume & Contact Footer -->
   <footer id="resume" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
     <div class="bg-slate-900 text-white rounded-2xl p-8 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
       <div>
-        <h2 class="text-2xl font-bold mb-2">Resume & Contact</h2>
-        <p class="text-slate-300 text-sm max-w-md">View my full background or inspect the clean HTML, CSS, and JavaScript behind this page on GitHub.</p>
+        <h2 class="text-2xl font-bold mb-2">Akhila Gandrotula</h2>
+        <p class="text-slate-300 text-sm">M.S. in Computer Science, University of Central Missouri • Irving, TX • +1 660 580 5932</p>
       </div>
       <div class="flex flex-wrap gap-4">
         <a href="./resume.pdf" download="Akhila_Gandrotula_Resume.pdf" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-3 rounded-lg font-medium text-sm transition">
-          Download Resume (PDF)
+          Download Akhila's Resume
         </a>
-        <a href="mailto:akhila.gandrotula12@gmail.com" class="bg-slate-800 hover:bg-slate-700 text-white px-5 py-3 rounded-lg font-medium text-sm transition">
+        <a href="https://google.com" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white px-5 py-3 rounded-lg font-medium text-sm transition">
           akhila.gandrotula12@gmail.com
         </a>
       </div>
     </div>
   </footer>
 
-  <!-- Interactive JavaScript -->
+  <!-- Interactive Filter JavaScript -->
   <script>
-    // Demo 1: Live Search Filter
-    const searchInput = document.getElementById('search-input');
-  <!-- Interactive JavaScript -->
-  <script>
-    // Demo 1: Live Search Filter
-    const searchInput = document.getElementById('search-input');
-    const items = document.querySelectorAll('.pattern-item');
-    const itemCount = document.getElementById('item-count');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const expCards = document.querySelectorAll('.exp-card');
 
-    searchInput.addEventListener('input', (e) => {
-      const term = e.target.value.toLowerCase();
-      let visible = 0;
-      items.forEach(item => {
-        const text = item.textContent.toLowerCase();
-        if (text.includes(term)) {
-          item.style.display = 'flex';
-          visible++;
-        } else {
-          item.style.display = 'none';
-        }
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selected = btn.getAttribute('data-filter');
+
+        // Update active button styling
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-blue-600', 'text-white', 'shadow-xs');
+          b.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-300');
+        });
+        btn.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-300');
+        btn.classList.add('bg-blue-600', 'text-white', 'shadow-xs');
+
+        // Show/Hide matching company cards
+        expCards.forEach(card => {
+          if (selected === 'all' || card.getAttribute('data-company') === selected) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
       });
-      itemCount.textContent = `Showing ${visible} item${visible === 1 ? '' : 's'}`;
-    });
-
-    // Demo 2: Theme & State Feedback
-    const previewCard = document.getElementById('preview-card');
-    const themeToggle = document.getElementById('theme-toggle');
-    const saveBtn = document.getElementById('save-btn');
-    const saveStatus = document.getElementById('save-status');
-    let isDark = false;
-
-    themeToggle.addEventListener('click', () => {
-      isDark = !isDark;
-      if (isDark) {
-        previewCard.classList.replace('bg-white', 'bg-slate-900');
-        previewCard.classList.replace('text-slate-900', 'text-white');
-        themeToggle.classList.replace('bg-slate-900', 'bg-white');
-        themeToggle.classList.replace('text-white', 'text-slate-900');
-        themeToggle.textContent = 'Switch to Light Mode';
-      } else {
-        previewCard.classList.replace('bg-slate-900', 'bg-white');
-        previewCard.classList.replace('text-white', 'text-slate-900');
-        themeToggle.classList.replace('bg-white', 'bg-slate-900');
-        themeToggle.classList.replace('text-slate-900', 'text-white');
-        themeToggle.textContent = 'Switch to Dark Mode';
-      }
-    });
-
-    saveBtn.addEventListener('click', () => {
-      saveStatus.textContent = 'Saving...';
-      setTimeout(() => {
-        saveStatus.textContent = '✓ Saved just now';
-      }, 400);
     });
   </script>
 
 </body>
 </html>
+
